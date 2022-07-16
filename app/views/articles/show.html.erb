@@ -1,0 +1,8 @@
+<%= render "layouts/navbar", article: @article %>
+<h2><%= @article.title %></h2>
+<%= link_to "Edit", edit_article_path %>
+<%= link_to "Delete", article_path(@article),
+    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}  %>
+<p><%= @article.content%></p>
+
+<p>Find me in app/views/articles/show.html.erb</p>

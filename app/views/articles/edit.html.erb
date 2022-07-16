@@ -1,0 +1,11 @@
+<%= render "layouts/navbar", article: @article %>
+<h1>Articles#edit</h1>
+
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content%>
+  <%= f.submit %>
+<% end %>
+<p>Find me in app/views/articles/edit.html.erb</p>
